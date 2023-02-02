@@ -1,0 +1,85 @@
+$main-color:  #303030
+
+@keyframes anime 
+ 0% 
+  left: 0
+ 50% 
+  left: 8px
+ 100%
+  left: 0 
+
+
+.arrow 
+ &-right  
+  position: absolute
+  width: 54px
+  height: 54px
+  border-radius: 50%
+  left: 0
+  top: 0
+  background-color: transparent
+  z-index: 5
+ &__circle
+  position: absolute
+  left: 0
+  top: 0   
+  width: 54px
+  height: 54px     
+  border: 1px solid $main-color  
+  border-radius: 50%
+  background-color: #fff
+  z-index: 2
+  cursor: pointer
+  &:hover
+   background-color: #F5F5F5 
+ &__line
+  position: absolute
+  top: 26px
+  left: 19px
+  width: 16px
+  height: 2px       
+  background-color: $main-color 
+  z-index: 3
+  &__article
+   width: 26px
+   top: 6px
+   left: 0 
+ &__blank
+  position: absolute
+  width: 6px
+  height: 6px
+  border-top: 2px solid $main-color 
+  border-right: 2px solid $main-color 
+  z-index: 3
+ &-global
+  position: absolute
+  top: 0  
+  left: 0 
+ &__left
+  transform: rotate(225deg)  
+  top: 24px
+  left: 18px
+ &__right
+  transform: rotate(45deg)  
+  top: 24px
+  left: 30px
+ &__article
+  transform: rotate(45deg)    
+  top: 4px
+  right: 0px
+.like
+ cursor: pointer 
+ fill: #C9C9C9
+ &:hover
+  fill: #979797   
+.red
+ fill: #E24B33  
+ &:hover
+  fill: #E24B33  
+.hide
+ opacity: 0 
+ &_burger 
+  opacity: 0
+  left: -100%
+.body_noscroll
+ overflow: hidden     

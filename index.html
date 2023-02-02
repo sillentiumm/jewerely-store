@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jewerely store</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Prata&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="src/css/style.css">    
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-burger-open" id="burgerOpen">
+                <div class="header-burger-open__element" id="burgerOpen1"></div>
+                <div class="header-burger-open__element2"id="burgerOpen2"></div>
+                <div class="header-burger-open__element3"id="burgerOpen3"></div>
+            </div>
+            <div class="header-burger hide_burger" id="burger">
+                <div class="header-burger-element">
+                    <div class="header-location__icon">
+                        <img src="src/img/icon/marker.svg" alt="marker">
+                    </div>
+                    <select class="header-location__select">
+                        <option>Санкт-Петербург</option>
+                        <option>Москва</option>
+                        <option>Нижний Новгород</option>
+                        <option>Ростов-на-Дону</option>
+                    </select>
+                </div>
+                <div class="header-burger-element">
+                    <div class="header-phone__icon">
+                        <img src="src/img/icon/phone.svg" alt="phone">
+                    </div>
+                    <div class="header-phone__text">
+                        8 800 785-25-35
+                    </div>
+                </div>
+                <div class="header-burger-element">
+                    <button class="header-login__btn">Вход</button>
+                    <span> | </span>
+                    <button class="header-login__btn header-login__btn__registration">Регистрация</button>
+                </div>
+                <div class="header-burger-element">
+                    <div class="header-icons__likes">
+                        <img src="src/img/icon/hearth.svg" alt="likes">
+                        <div class="header-icons__likes__count">15</div>
+                    </div>
+                    <div class="header-icons__settings"></div>
+                    <div class="header-icons-basket">
+                        <div class="header-icons__basket"></div>
+                    </div>
+                </div>
+                <div class="navigation-search">
+                    <div class="navigation-search__icon"></div>
+                    <input class="navigation-search__input" type="text" placeholder="Поиск по сайту">
+                </div>
+                <a class="navigation-menu__element header-burger-element" href="#">Каталог</a>
+                <a class="navigation-menu__element header-burger-element" href="#">Акции</a>
+                <a class="navigation-menu__element header-burger-element" href="#">Бренды</a>
+                <a class="navigation-menu__element header-burger-element" href="#">Магазины</a>
+                <a class="navigation-menu__element header-burger-element" href="#">О нас</a>
+                <a class="navigation-menu__element header-burger-element" href="#">Доставка и оплата</a>
+                <a class="navigation-menu__element header-burger-element" href="#">Статьи</a>
+            </div>
+                <div class="header-location">
+                    <div class="header-location__icon">
+                        <img src="src/img/icon/marker.svg" alt="marker">
+                    </div>
+                    <select class="header-location__select">
+                        <option>Санкт-Петербург</option>
+                        <option>Москва</option>
+                        <option>Нижний Новгород</option>
+                        <option>Ростов-на-Дону</option>
+                    </select>
+                </div>
+                <div class="header-phone">
+                    <div class="header-phone__icon">
+                        <img src="src/img/icon/phone.svg" alt="phone">
+                    </div>
+                    <div class="header-phone__text">
+                        8 800 785-25-35
+                    </div>
+                </div>
+            <div class="header-title">
+                <div>
+                    <span>Goldy</span>
+                    Store
+                </div>
+                <div class="header-subtitle">ювелирный магазин</div>
+            </div>
+                <div class="header-login">
+                    <button class="header-login__btn">Вход</button>
+                    <span> | </span>
+                    <button class="header-login__btn header-login__btn__registration">Регистрация</button>
+                </div>
+                <div class="header-icons">
+                    <div class="header-icons__likes">
+                        <img src="src/img/icon/hearth.svg" alt="likes">
+                        <div class="header-icons__likes__count" id="likesCount"></div>
+                    </div>
+                    <div class="header-icons__settings"></div>
+                    <div class="header-icons-basket">
+                        <div class="header-icons__basket"></div>
+                    </div>
+                </div>
+        </header>
+        <section class="navigation">
+            <div class="navigation-menu">
+                <a class="navigation-menu__element" href="#">Каталог</a>
+                <a class="navigation-menu__element" href="#">Акции</a>
+                <a class="navigation-menu__element" href="#">Бренды</a>
+                <a class="navigation-menu__element" href="#">Магазины</a>
+                <a class="navigation-menu__element" href="#">О нас</a>
+                <a class="navigation-menu__element" href="#">Доставка и оплата</a>
+                <a class="navigation-menu__element" href="#">Статьи</a>
+            </div>
+            <div class="navigation-line"></div>
+            <div class="navigation-search">
+                <div class="navigation-search__icon"></div>
+                <input class="navigation-search__input" type="text" placeholder="Поиск по сайту">
+            </div>
+        </section>
+        <section class="main" id="main">
+            <div class="main-slider" id="mainSlider">
+                <div class="main-slider-el">
+                    <div class="main-element">
+                        <div class="main-text">
+                            <div class="main__description">Суперскидка до 60%</div>
+                            <div class="main__title">НА БРИЛЛИАНТЫ</div>
+                            <button class="main__btn">Подробнее</button>
+                        </div>
+                        <div class="main-img">
+                            <img src="src/img/slider.png" alt="ring">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-slider-el">
+                    <div class="main-element">
+                        <div class="main-text">
+                            <div class="main__description">Суперскидка до 60%</div>
+                            <div class="main__title">НА СЕРЕБРО</div>
+                            <button class="main__btn">Подробнее</button>
+                        </div>
+                        <div class="main-img">
+                            <img src="src/img/slider.png" alt="ring">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-slider-el">
+                    <div class="main-element">
+                        <div class="main-text">
+                            <div class="main__description">Суперскидка до 60%</div>
+                            <div class="main__title">НА ЗОЛОТО</div>
+                            <button class="main__btn">Подробнее</button>
+                        </div>
+                        <div class="main-img">
+                            <img src="src/img/slider.png" alt="ring">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-arrow main-arrow__left" id="mainArrowLeft">
+                <div class="arrow-left">
+                    <div class="arrow__circle"></div>
+                    <div class="arrow__line"></div>
+                    <div class="arrow__blank arrow__left"></div>
+                </div>
+            </div>
+            <div class="main-arrow main-arrow__right" id="mainArrowRight">
+                <div class="arrow-right">
+                    <div class="arrow__circle"></div>
+                    <div class="arrow__line"></div>
+                    <div class="arrow__blank arrow__right"></div>  
+                </div> 
+            </div>
+            <div class="main-nav">
+                <div class="main-nav__point"></div>
+                <div class="main-nav__point"></div>
+                <div class="main-nav__point"></div>
+            </div>
+        </section>
+        <section class="categories" id="categories">
+            <div class="categories__title">Популярные категории</div>
+            <div class="categories-elements">
+                <div class="categories-element">
+                    <div></div>
+                    <div class="categories-element__img">
+                        <img src="src/img/categories/ring.png" alt="ring">
+                    </div>
+                    <div class="categories-element__title">Кольца</div>
+                </div>
+
+                <div class="categories-element">
+                    <div></div>
+                    <div class="categories-element__img">
+                        <img src="src/img/categories/earrings.png" alt="ring">
+                    </div>
+                    <div class="categories-element__title">Серьги</div>
+                </div>
+
+                <div class="categories-element">
+                    <div></div>
+                    <div class="categories-element__img">
+                        <img src="src/img/categories/engagement_rings.png" alt="ring">
+                    </div>
+                    <div class="categories-element__title">Помолвочные кольца</div>
+                </div>
+
+                <div class="categories-element">
+                    <div></div>
+                    <div class="categories-element__img">
+                        <img src="src/img/categories/bracelet.png" alt="bracelet">
+                    </div>
+                    <div class="categories-element__title">Браслеты</div>
+                </div>
+
+                <div class="categories-element">
+                    <div></div>
+                    <div class="categories-element__img">
+                        <img src="src/img/categories/necklace.png" alt="necklace">
+                    </div>
+                    <div class="categories-element__title">Колье и подвески</div>
+                </div>
+
+                <div class="categories-element">
+                    <div></div>
+                    <div class="categories-element__img">
+                        <img src="src/img/categories/clock.png" alt="clock">
+                    </div>
+                    <div class="categories-element__title">Часы</div>
+                </div>
+            </div>
+        </section>
+        <section class="sale" id="sale">
+            <div class="sale__title">Распродажа</div>
+            <div class="sale-menu">
+                <div class="sale-menu-choise">
+                    <button class="sale-menu-choise__element sale-menu-choise__element__active">Кольца</button>
+                    <button class="sale-menu-choise__element">Серьги</button>
+                    <button class="sale-menu-choise__element">Браслеты</button>
+                    <button class="sale-menu-choise__element">Часы</button>
+                </div>
+                <div class="sale-menu-arrows">
+                    <div class="sale-menu-arrow" id="saleArrowLeft">
+                        <div class="arrow-left">
+                            <div class="arrow__circle"></div>
+                            <div class="arrow__line"></div>
+                            <div class="arrow__blank arrow__left"></div>
+                        </div>
+                    </div>
+                    <div class="sale-menu-arrow" id="saleArrowRight" >
+                        <div class="arrow-right">
+                            <div class="arrow__circle"></div>
+                            <div class="arrow__line"></div>
+                            <div class="arrow__blank arrow__right"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sale-elements">
+                <div class="sale-elements-line" id="linee">
+                    <div class="sale-element">
+                        <div class="sale-element__sale">Sale</div>
+                        <div class="sale-element__hit">Hit</div>
+                        <div class="sale-element-like">
+                            <svg class="like" width="20" height="18" viewBox="0 0 20 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z" />
+                            </svg>
+                        </div>
+                        <div class="sale-element-watch">
+                            <svg class="watch" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.0044 1.5C11.0044 0.947715 10.5567 0.5 10.0044 0.5C9.45211 0.5 9.00439 0.947715 9.00439 1.5V3.54989C8.04476 3.64609 7.12848 3.87731 6.27405 4.20772L5.4446 3.05037C5.12289 2.60146 4.49817 2.49836 4.04927 2.82007C3.60036 3.14179 3.49726 3.76651 3.81898 4.21541L4.45792 5.10695C3.92702 5.43178 3.434 5.79271 2.98539 6.17708C1.24791 7.6658 0 9.66836 0 11.5C0 13.3316 1.24791 15.3342 2.98539 16.8229C4.76222 18.3453 7.23586 19.5 10 19.5C12.7639 19.5 15.2376 18.3462 17.0145 16.8241C18.7522 15.3355 20 13.333 20 11.5C20 9.66702 18.7522 7.66444 17.0145 6.17591C16.6848 5.89346 16.331 5.62368 15.9559 5.37161L16.6253 4.43759C16.947 3.98869 16.844 3.36398 16.3951 3.04225C15.9462 2.72053 15.3214 2.82362 14.9997 3.27252L14.1918 4.39975C13.2102 3.96793 12.1376 3.66528 11.0044 3.55075V1.5ZM10 7.5C7.79086 7.5 6 9.29086 6 11.5C6 13.7091 7.79086 15.5 10 15.5C12.2091 15.5 14 13.7091 14 11.5C14 9.29086 12.2091 7.5 10 7.5Z" />
+                            </svg>
+                        </div>
+                        <div class="sale-element-img">
+                            <img src="src/img/sale/sale1.png" alt="ring">
+                        </div>
+                        <div class="sale-element-nav">
+                            <div class="sale-element-nav__point"></div>
+                            <div class="sale-element-nav__point"></div>
+                            <div class="sale-element-nav__point"></div>
+                        </div>
+                        <div class="sale-element-price">
+                            <div class="sale-element-price__fullprice">
+                                41 000 ₽
+                                <span>65 000 ₽</span>
+                            </div>
+                            <div class="sale-element-price__sale">-45%</div>
+                        </div>
+                        <div class="sale-element__descr">
+                            Стильное кольцо из белого золота c бриллиантами
+                        </div>
+                        <div class="sale-element-hiden">
+                            <select class="sale-element-select">
+                                <option>Белое золото</option>
+                                <option>Желтое золото</option>
+                                <option>Серебро</option>
+                            </select>
+                            <select class="sale-element-select">
+                                <option>Размер: 16</option>
+                                <option>Размер: 17</option>
+                                <option>Размер: 18</option>
+                                <option>Размер: 18.5</option>
+                                <option>Размер: 19</option>
+                            </select>
+                        </div>
+                    </div>
+    
+                    <div class="sale-element">
+                        <div class="sale-element-like">
+                            <svg class="like" width="20" height="18" viewBox="0 0 20 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z" />
+                            </svg>
+                        </div>
+                        <div class="sale-element-watch">
+                            <svg class="watch" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.0044 1.5C11.0044 0.947715 10.5567 0.5 10.0044 0.5C9.45211 0.5 9.00439 0.947715 9.00439 1.5V3.54989C8.04476 3.64609 7.12848 3.87731 6.27405 4.20772L5.4446 3.05037C5.12289 2.60146 4.49817 2.49836 4.04927 2.82007C3.60036 3.14179 3.49726 3.76651 3.81898 4.21541L4.45792 5.10695C3.92702 5.43178 3.434 5.79271 2.98539 6.17708C1.24791 7.6658 0 9.66836 0 11.5C0 13.3316 1.24791 15.3342 2.98539 16.8229C4.76222 18.3453 7.23586 19.5 10 19.5C12.7639 19.5 15.2376 18.3462 17.0145 16.8241C18.7522 15.3355 20 13.333 20 11.5C20 9.66702 18.7522 7.66444 17.0145 6.17591C16.6848 5.89346 16.331 5.62368 15.9559 5.37161L16.6253 4.43759C16.947 3.98869 16.844 3.36398 16.3951 3.04225C15.9462 2.72053 15.3214 2.82362 14.9997 3.27252L14.1918 4.39975C13.2102 3.96793 12.1376 3.66528 11.0044 3.55075V1.5ZM10 7.5C7.79086 7.5 6 9.29086 6 11.5C6 13.7091 7.79086 15.5 10 15.5C12.2091 15.5 14 13.7091 14 11.5C14 9.29086 12.2091 7.5 10 7.5Z" />
+                            </svg>
+                        </div>
+                        <div class="sale-element-img">
+                            <img src="src/img/sale/sale2.png" alt="ring">
+                        </div>
+                        <div class="sale-element-nav">
+                            <div class="sale-element-nav__point"></div>
+                            <div class="sale-element-nav__point"></div>
+                            <div class="sale-element-nav__point"></div>
+                        </div>
+                        <div class="sale-element-price">
+                            <div class="sale-element-price__fullprice">
+                                56 000 ₽
+                            </div>
+                        </div>
+                        <div class="sale-element__descr">
+                            Стильное кольцо из белого золота c бриллиантами
+                        </div>
+                        <div class="sale-element-hiden">
+                            <select class="sale-element-select">
+                                <option >Белое золото</option>
+                                <option>Желтое золото</option>
+                                <option>Серебро</option>
+                            </select>
+                            <select class="sale-element-select">
+                                <option>Размер: 16</option>
+                                <option>Размер: 17</option>
+                                <option>Размер: 18</option>
+                                <option>Размер: 18.5</option>
+                                <option>Размер: 19</option>
+                            </select>
+                        </div>
+                    </div>
+    
+                    <div class="sale-element">
+                        <div class="sale-element-like">
+                            <svg class="like" width="20" height="18" viewBox="0 0 20 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z" />
+                            </svg>
+                        </div>
+                        <div class="sale-element-watch">
+                            <svg class="watch" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.0044 1.5C11.0044 0.947715 10.5567 0.5 10.0044 0.5C9.45211 0.5 9.00439 0.947715 9.00439 1.5V3.54989C8.04476 3.64609 7.12848 3.87731 6.27405 4.20772L5.4446 3.05037C5.12289 2.60146 4.49817 2.49836 4.04927 2.82007C3.60036 3.14179 3.49726 3.76651 3.81898 4.21541L4.45792 5.10695C3.92702 5.43178 3.434 5.79271 2.98539 6.17708C1.24791 7.6658 0 9.66836 0 11.5C0 13.3316 1.24791 15.3342 2.98539 16.8229C4.76222 18.3453 7.23586 19.5 10 19.5C12.7639 19.5 15.2376 18.3462 17.0145 16.8241C18.7522 15.3355 20 13.333 20 11.5C20 9.66702 18.7522 7.66444 17.0145 6.17591C16.6848 5.89346 16.331 5.62368 15.9559 5.37161L16.6253 4.43759C16.947 3.98869 16.844 3.36398 16.3951 3.04225C15.9462 2.72053 15.3214 2.82362 14.9997 3.27252L14.1918 4.39975C13.2102 3.96793 12.1376 3.66528 11.0044 3.55075V1.5ZM10 7.5C7.79086 7.5 6 9.29086 6 11.5C6 13.7091 7.79086 15.5 10 15.5C12.2091 15.5 14 13.7091 14 11.5C14 9.29086 12.2091 7.5 10 7.5Z" />
+                            </svg>
+                        </div>
+                        <div class="sale-element-img">
+                            <img src="src/img/sale/sale3.png" alt="ring">
+                        </div>
+                        <div class="sale-element-nav">
+                            <div class="sale-element-nav__point"></div>
+                            <div class="sale-element-nav__point"></div>
+                            <div class="sale-element-nav__point"></div>
+                        </div>
+                        <div class="sale-element-price">
+                            <div class="sale-element-price__fullprice">
+                                37 500 ₽
+                            </div>
+                        </div>
+                        <div class="sale-element__descr">
+                            Стильное кольцо из белого золота c бриллиантами
+                        </div>
+                        <div class="sale-element-hiden">
+                            <select class="sale-element-select">
+                                <option >Белое золото</option>
+                                <option>Желтое золото</option>
+                                <option>Серебро</option>
+                            </select>
+                            <select class="sale-element-select">
+                                <option>Размер: 16</option>
+                                <option>Размер: 17</option>
+                                <option>Размер: 18</option>
+                                <option>Размер: 18.5</option>
+                                <option>Размер: 19</option>
+                            </select>
+                        </div>
+                    </div>
+    
+                    <div class="sale-element">
+                        <div class="sale-element-like">
+                            <svg class="like" width="20" height="18" viewBox="0 0 20 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z" />
+                            </svg>
+                        </div>
+                        <div class="sale-element-watch">
+                            <svg class="watch" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.0044 1.5C11.0044 0.947715 10.5567 0.5 10.0044 0.5C9.45211 0.5 9.00439 0.947715 9.00439 1.5V3.54989C8.04476 3.64609 7.12848 3.87731 6.27405 4.20772L5.4446 3.05037C5.12289 2.60146 4.49817 2.49836 4.04927 2.82007C3.60036 3.14179 3.49726 3.76651 3.81898 4.21541L4.45792 5.10695C3.92702 5.43178 3.434 5.79271 2.98539 6.17708C1.24791 7.6658 0 9.66836 0 11.5C0 13.3316 1.24791 15.3342 2.98539 16.8229C4.76222 18.3453 7.23586 19.5 10 19.5C12.7639 19.5 15.2376 18.3462 17.0145 16.8241C18.7522 15.3355 20 13.333 20 11.5C20 9.66702 18.7522 7.66444 17.0145 6.17591C16.6848 5.89346 16.331 5.62368 15.9559 5.37161L16.6253 4.43759C16.947 3.98869 16.844 3.36398 16.3951 3.04225C15.9462 2.72053 15.3214 2.82362 14.9997 3.27252L14.1918 4.39975C13.2102 3.96793 12.1376 3.66528 11.0044 3.55075V1.5ZM10 7.5C7.79086 7.5 6 9.29086 6 11.5C6 13.7091 7.79086 15.5 10 15.5C12.2091 15.5 14 13.7091 14 11.5C14 9.29086 12.2091 7.5 10 7.5Z" />
+                            </svg>
+                        </div>
+                        <div class="sale-element-img">
+                            <img src="src/img/sale/sale4.png" alt="ring">
+                        </div>
+                        <div class="sale-element-nav">
+                            <div class="sale-element-nav__point"></div>
+                            <div class="sale-element-nav__point"></div>
+                            <div class="sale-element-nav__point"></div>
+                        </div>
+                        <div class="sale-element-price">
+                            <div class="sale-element-price__fullprice">
+                                39 200 ₽
+                            </div>
+                        </div>
+                        <div class="sale-element__descr">
+                            Стильное кольцо из белого золота c бриллиантами
+                        </div>
+                        <div class="sale-element-hiden">
+                            <select class="sale-element-select">
+                                <option >Белое золото</option>
+                                <option>Желтое золото</option>
+                                <option>Серебро</option>
+                            </select>
+                            <select class="sale-element-select">
+                                <option>Размер: 16</option>
+                                <option>Размер: 17</option>
+                                <option>Размер: 18</option>
+                                <option>Размер: 18.5</option>
+                                <option>Размер: 19</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="sale-element">
+                        <div class="sale-element-like">
+                            <svg class="like" width="20" height="18" viewBox="0 0 20 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z" />
+                            </svg>
+                        </div>
+                        <div class="sale-element-watch">
+                            <svg class="watch" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.0044 1.5C11.0044 0.947715 10.5567 0.5 10.0044 0.5C9.45211 0.5 9.00439 0.947715 9.00439 1.5V3.54989C8.04476 3.64609 7.12848 3.87731 6.27405 4.20772L5.4446 3.05037C5.12289 2.60146 4.49817 2.49836 4.04927 2.82007C3.60036 3.14179 3.49726 3.76651 3.81898 4.21541L4.45792 5.10695C3.92702 5.43178 3.434 5.79271 2.98539 6.17708C1.24791 7.6658 0 9.66836 0 11.5C0 13.3316 1.24791 15.3342 2.98539 16.8229C4.76222 18.3453 7.23586 19.5 10 19.5C12.7639 19.5 15.2376 18.3462 17.0145 16.8241C18.7522 15.3355 20 13.333 20 11.5C20 9.66702 18.7522 7.66444 17.0145 6.17591C16.6848 5.89346 16.331 5.62368 15.9559 5.37161L16.6253 4.43759C16.947 3.98869 16.844 3.36398 16.3951 3.04225C15.9462 2.72053 15.3214 2.82362 14.9997 3.27252L14.1918 4.39975C13.2102 3.96793 12.1376 3.66528 11.0044 3.55075V1.5ZM10 7.5C7.79086 7.5 6 9.29086 6 11.5C6 13.7091 7.79086 15.5 10 15.5C12.2091 15.5 14 13.7091 14 11.5C14 9.29086 12.2091 7.5 10 7.5Z" />
+                            </svg>
+                        </div>
+                        <div class="sale-element-img">
+                            <img src="src/img/sale/sale2.png" alt="ring">
+                        </div>
+                        <div class="sale-element-nav">
+                            <div class="sale-element-nav__point"></div>
+                            <div class="sale-element-nav__point"></div>
+                            <div class="sale-element-nav__point"></div>
+                        </div>
+                        <div class="sale-element-price">
+                            <div class="sale-element-price__fullprice">
+                                56 000 ₽
+                            </div>
+                        </div>
+                        <div class="sale-element__descr">
+                            Стильное кольцо из белого золота c бриллиантами
+                        </div>
+                        <div class="sale-element-hiden">
+                            <select class="sale-element-select">
+                                <option >Белое золото</option>
+                                <option>Желтое золото</option>
+                                <option>Серебро</option>
+                            </select>
+                            <select class="sale-element-select">
+                                <option>Размер: 16</option>
+                                <option>Размер: 17</option>
+                                <option>Размер: 18</option>
+                                <option>Размер: 18.5</option>
+                                <option>Размер: 19</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="sale-element">
+                        <div class="sale-element-like">
+                            <svg class="like" width="20" height="18" viewBox="0 0 20 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z" />
+                            </svg>
+                        </div>
+                        <div class="sale-element-watch">
+                            <svg class="watch" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M11.0044 1.5C11.0044 0.947715 10.5567 0.5 10.0044 0.5C9.45211 0.5 9.00439 0.947715 9.00439 1.5V3.54989C8.04476 3.64609 7.12848 3.87731 6.27405 4.20772L5.4446 3.05037C5.12289 2.60146 4.49817 2.49836 4.04927 2.82007C3.60036 3.14179 3.49726 3.76651 3.81898 4.21541L4.45792 5.10695C3.92702 5.43178 3.434 5.79271 2.98539 6.17708C1.24791 7.6658 0 9.66836 0 11.5C0 13.3316 1.24791 15.3342 2.98539 16.8229C4.76222 18.3453 7.23586 19.5 10 19.5C12.7639 19.5 15.2376 18.3462 17.0145 16.8241C18.7522 15.3355 20 13.333 20 11.5C20 9.66702 18.7522 7.66444 17.0145 6.17591C16.6848 5.89346 16.331 5.62368 15.9559 5.37161L16.6253 4.43759C16.947 3.98869 16.844 3.36398 16.3951 3.04225C15.9462 2.72053 15.3214 2.82362 14.9997 3.27252L14.1918 4.39975C13.2102 3.96793 12.1376 3.66528 11.0044 3.55075V1.5ZM10 7.5C7.79086 7.5 6 9.29086 6 11.5C6 13.7091 7.79086 15.5 10 15.5C12.2091 15.5 14 13.7091 14 11.5C14 9.29086 12.2091 7.5 10 7.5Z" />
+                            </svg>
+                        </div>
+                        <div class="sale-element-img">
+                            <img src="src/img/sale/sale3.png" alt="ring">
+                        </div>
+                        <div class="sale-element-nav">
+                            <div class="sale-element-nav__point"></div>
+                            <div class="sale-element-nav__point"></div>
+                            <div class="sale-element-nav__point"></div>
+                        </div>
+                        <div class="sale-element-price">
+                            <div class="sale-element-price__fullprice">
+                                37 500 ₽
+                            </div>
+                        </div>
+                        <div class="sale-element__descr">
+                            Стильное кольцо из белого золота c бриллиантами
+                        </div>
+                        <div class="sale-element-hiden">
+                            <select class="sale-element-select">
+                                <option >Белое золото</option>
+                                <option>Желтое золото</option>
+                                <option>Серебро</option>
+                            </select>
+                            <select class="sale-element-select">
+                                <option>Размер: 16</option>
+                                <option>Размер: 17</option>
+                                <option>Размер: 18</option>
+                                <option>Размер: 18.5</option>
+                                <option>Размер: 19</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="discount" id="discount">
+            <div class="discount-element">
+                <div class="discount-element-text">
+                    <div class="discount-element__descr">
+                        Скидки
+                        на все украшения с бриллиантами
+                    </div>
+                    <div class="discount-element__sale">
+                        До
+                        <span>-50%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="discount-element">
+                <div class="discount-element-text">
+                    <div class="discount-element__descr">
+                        Скидки
+                        на кольца
+                        и браслеты
+                    </div>
+                    <div class="discount-element__sale">
+                        До
+                        <span>-40%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="discount-element">
+                <div class="discount-element-text">
+                    <div class="discount-element__descr">
+                        снижение цен на обручальные кольца
+                    </div>
+                    <div class="discount-element__sale">
+                        До
+                        <span>-60%</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="product" id="product">
+            <div class="product-header">
+                <div class="product__title">Товар дня</div>
+                <div class="product-arrows">
+                    <div class="sale-menu-arrow">
+                        <div class="arrow-left">
+                            <div class="arrow__circle"></div>
+                            <div class="arrow__line"></div>
+                            <div class="arrow__blank arrow__left"></div>
+                        </div>
+                    </div>
+                    <div class="sale-menu-arrow">
+                        <div class="arrow-right">
+                            <div class="arrow__circle"></div>
+                            <div class="arrow__line"></div>
+                            <div class="arrow__blank arrow__right"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-menu" id="productMenu">
+                <div class="product-img">
+                    <div class="product-img-promotion">
+                        <div class="product-img-promotion__element">New</div>
+                        <div class="product-img-promotion__element">Хит</div>
+                        <div class="product-img-promotion__element">Sale</div>
+                    </div>
+                    <img src="src/img/product.png" alt="ring">
+                    <div class="product-img-arrow product-img-arrow__left"></div>
+                    <div class="product-img-arrow product-img-arrow__right"></div>
+                </div>
+                <div class="product-descr">
+                    <div class="product-descr-stars">
+                        <img src="src/img/icon/Star.svg" alt="star">
+                        <img src="src/img/icon/Star.svg" alt="star">
+                        <img src="src/img/icon/Star.svg" alt="star">
+                        <img src="src/img/icon/Star.svg" alt="star">
+                        <img src="src/img/icon/Star_empty.svg" alt="empty star">
+                        <span>4,2</span>
+                    </div>
+                    <div class="product-descr__title">
+                        Кольцо из золота с бриллиантами
+                    </div>
+                    <div class="product-descr__subtitle">
+                        Артикул: 1012076
+                    </div>
+                    <div class="product-descr-price">
+                        <div class="product-descr-price-fullprice">
+                            22 000 ₽
+                            <div class="product-descr-price-cross">
+                                30 000 ₽
+                            </div>
+                            <div class="product-descr-price__sale">-45%</div>
+                        </div>
+                        <div class="product-descr-price-timer">
+                            <div class="product-descr-price-timer-element">
+                                <div id="hours">12</div>
+                                <span>часов</span>
+                            </div>
+                            <span>:</span>
+                            <div class="product-descr-price-timer-element">
+                                <div id="minutes">46</div>
+                                <span>минут</span>
+                            </div>
+                            <span>:</span>
+                            <div class="product-descr-price-timer-element" >
+                                <div id="seconds" >51</div>
+                                <span>секунд</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-descr__line"></div>
+                    <div class="product-descr-color">
+                        <div class="product-descr-color__title">цвет</div>
+                        <div class="product-descr-color-elements">
+                            <div class="product-descr-color-element__big">
+                                <div class="product-descr-color-element"></div>
+                            </div>
+
+                            <div class="product-descr-color-element__big">
+                                <div class="product-descr-color-element"></div>
+                            </div>
+
+                            <div class="product-descr-color-element__big">
+                                <div class="product-descr-color-element"></div>
+                            </div>
+
+                            <div class="product-descr-color-element__big">
+                                <div class="product-descr-color-element"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-descr-size">
+                        <div class="product-descr-size__title">Размер</div>
+                        <div class="product-descr-size__question" id=productDetailQuestion>
+                            <div class="product-descr-size__question__mark" >?</div>
+                            <div class="product-descr-size__question__detail" id="productDetail">
+                                Также как существующая теория напрямую зависит от экономической целесообразности принимаемых решений.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-descr-size-elements">
+                        <div class="product-descr-size__element">16,5</div>
+                        <div class="product-descr-size__element">17,5</div>
+                        <div class="product-descr-size__element">18,5</div>
+                        <div class="product-descr-size__element">19</div>
+                        <div class="product-descr-size__element">19,5</div>
+                        <div class="product-descr-size__element">19,5</div>
+                        <div class="product-descr-size__element">18,5</div>
+                        <div class="product-descr-size__element">19</div>
+                        <div class="product-descr-size__element">19,5</div>
+                        <div class="product-descr-size__element">19,5</div>
+                    </div>
+                    <div class="product-descr-footer">
+                        <div class="product-descr-btns">
+                            <button class="product-descr-basket">в корзину</button>
+                            <button class="product-descr-basket product-descr-click">купить в 1 клик</button>
+                        </div>
+                        <div class="product-descr-icons">
+                            <div class="product-descr-icons-element product-descr-icons-element__like">
+                                <div class="product-descr-icons-element__img">
+                                    <svg class="like" width="20" height="18" viewBox="0 0 20 18" fill="red" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.94668e-08 5.40001C-0.000248434 3.95035 0.582385 2.56146 1.61681 1.54584C2.65124 0.53022 4.05058 -0.026834 5.5 1.1704e-05C7.21732 -0.0091083 8.85599 0.719186 10 2.00001C11.144 0.719186 12.7827 -0.0091083 14.5 1.1704e-05C15.9494 -0.026834 17.3488 0.53022 18.3832 1.54584C19.4176 2.56146 20.0002 3.95035 20 5.40001C20 10.756 13.621 14.8 10 18C6.387 14.773 7.94668e-08 10.76 7.94668e-08 5.40001Z"/>
+                                    </svg>
+                                </div>
+                                <span>Сохранить</span>
+                            </div>
+
+                            <div class="product-descr-icons-element">
+                                <div class="product-descr-icons-element__img">
+                                    <div class="product-descr-icons-element__img2"></div>
+                                    <div class="product-descr-icons-element__img3"></div>
+                                    <div class="product-descr-icons-element__img4"></div>
+                                </div>
+                                <span>Сравнить</span>
+                            </div>
+
+                            <div class="product-descr-icons-element">
+                                <div class="product-descr-icons-element__img">
+                                    <img src="src/img/icon/share.svg" alt="share">
+                                </div>
+                                <span>Поделиться</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="articles" id="articles">
+            <div class="articles-header">
+                <div class="articles__title">Статьи</div>
+                <div class="articles-more" id="articlesMore">
+                    <div class="articles-more__text" id="articlesArrow">Читать все</div>
+                    <div class="articles-more-arrow">
+                        <div class="arrow__line arrow__line__article"></div>
+                        <div class="arrow__blank arrow__article"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="articles-elements">
+                <div class="articles-element">
+                    <img src="src/img/articles/articles1.png" alt="articles">
+                    <div class="articles-element__date">21 сентября 2021</div>
+                    <div class="articles-element__title">Обручальные кольца: тренды 2021</div>
+                </div>
+
+                <div class="articles-element">
+                    <img src="src/img/articles/articles2.png" alt="articles">
+                    <div class="articles-element__date">21 сентября 2021</div>
+                    <div class="articles-element__title">Главные ювелирные тренды года</div>
+                </div>
+
+                <div class="articles-element">
+                    <img src="src/img/articles/articles3.png" alt="articles">
+                    <div class="articles-element__date">21 сентября 2021</div>
+                    <div class="articles-element__title">
+                        Жемчуг: 7 малоизвестных фактов о культовом украшении
+                    </div>
+                </div>
+
+                <div class="articles-element">
+                    <img src="src/img/articles/articles4.png" alt="articles">
+                    <div class="articles-element__date">21 сентября 2021</div>
+                    <div class="articles-element__title">
+                        Как отличить золото от подделки: 10 практических советов
+                    </div>
+                </div>
+
+                <div class="articles-element articles__hide">
+                    <img src="src/img/articles/articles1.png" alt="articles">
+                    <div class="articles-element__date">21 сентября 2021</div>
+                    <div class="articles-element__title">Обручальные кольца: тренды 2021</div>
+                </div>
+
+                <div class="articles-element articles__hide">
+                    <img src="src/img/articles/articles2.png" alt="articles">
+                    <div class="articles-element__date">21 сентября 2021</div>
+                    <div class="articles-element__title">Главные ювелирные тренды года</div>
+                </div>
+
+                <div class="articles-element articles__hide">
+                    <img src="src/img/articles/articles3.png" alt="articles">
+                    <div class="articles-element__date">21 сентября 2021</div>
+                    <div class="articles-element__title">
+                        Жемчуг: 7 малоизвестных фактов о культовом украшении
+                    </div>
+                </div>
+
+                <div class="articles-element articles__hide">
+                    <img src="src/img/articles/articles4.png" alt="articles">
+                    <div class="articles-element__date">21 сентября 2021</div>
+                    <div class="articles-element__title">
+                        Как отличить золото от подделки: 10 практических советов
+                    </div>
+                </div>
+
+                <div class="articles-element articles__hide">
+                    <img src="src/img/articles/articles1.png" alt="articles">
+                    <div class="articles-element__date">21 сентября 2021</div>
+                    <div class="articles-element__title">Обручальные кольца: тренды 2021</div>
+                </div>
+
+                <div class="articles-element articles__hide">
+                    <img src="src/img/articles/articles2.png" alt="articles">
+                    <div class="articles-element__date">21 сентября 2021</div>
+                    <div class="articles-element__title">Главные ювелирные тренды года</div>
+                </div>
+
+                <div class="articles-element articles__hide">
+                    <img src="src/img/articles/articles3.png" alt="articles">
+                    <div class="articles-element__date">21 сентября 2021</div>
+                    <div class="articles-element__title">
+                        Жемчуг: 7 малоизвестных фактов о культовом украшении
+                    </div>
+                </div>
+
+                <div class="articles-element articles__hide">
+                    <img src="src/img/articles/articles4.png" alt="articles">
+                    <div class="articles-element__date">21 сентября 2021</div>
+                    <div class="articles-element__title">
+                        Как отличить золото от подделки: 10 практических советов
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="src/scripts/mainSlider.js"></script>
+    <script src="src/scripts/interface.js"></script>
+    <script src="src/scripts/sale.js"></script>
+    <script src="src/scripts/articles.js"></script>
+    <script src="src/scripts/product.js"></script>
+    <script src="src/scripts/burger.js"></script>
+</body>
+
+</html>
